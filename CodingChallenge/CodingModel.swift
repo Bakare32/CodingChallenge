@@ -6,16 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
-class CodingModel {
-  var title: String
-  var describe: String
-  var image: String
+class Colors {
+    var gl: CAGradientLayer!
 
-  init(title: String, describe: String, image: String) {
-    self.title = title
-    self.describe = describe
-    self.image = image
-  }
+    init() {
+        let colorTop = UIColor(red: 192.0 / 255.0, green: 38.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 35.0 / 255.0, green: 2.0 / 255.0, blue: 2.0 / 255.0, alpha: 1.0).cgColor
 
+        self.gl = CAGradientLayer()
+        self.gl.colors = [colorTop, colorBottom]
+        self.gl.locations = [0.0, 1.0]
+    }
 }

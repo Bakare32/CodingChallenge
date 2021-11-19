@@ -6,17 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoViewController: UIViewController {
   
   var list: CodingViewModel?
-  var items: [CodingModel] = {
-  
-    let firstPage = CodingModel(title: "Document your experience", describe: "With the experience app, you are", image: "blacky")
-      let secondPage = CodingModel(title: "Comes in handy.", describe: "Xperience makes documentation", image: "blacky")
-      let thirdPage = CodingModel(title: "Bring your story to life", describe: "Writing and documenting your experience", image: "blacky")
-      return[firstPage,secondPage,thirdPage]
-    }()
+  var items: [Photo] = []
   
   lazy var mainCollectionView: UICollectionView = {
     let layout = UICollectionViewFlowLayout()
@@ -26,6 +21,8 @@ class PhotoViewController: UIViewController {
     collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
     collectionView.isPagingEnabled = true
       collectionView.backgroundColor = .systemBackground  //UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)
+      
+//      collectionView.backgroundColor = .systemBackground
     collectionView.showsVerticalScrollIndicator = false
     collectionView.isUserInteractionEnabled = true
     collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -38,7 +35,7 @@ class PhotoViewController: UIViewController {
     mainCollectionView.dataSource = self
     mainCollectionView.delegate = self
     view.backgroundColor = .systemBackground
-    mainCollectionView.anchorWithConstantsToTop(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 20, leftConstant: 20, bottomConstant:  20, rightConstant:  20)
+    mainCollectionView.anchorWithConstantsToTop(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 20, leftConstant: 0, bottomConstant:  20, rightConstant:  0)
       UIColor { traitCollection -> UIColor in //1
         switch traitCollection.userInterfaceStyle { //2
         case .dark:
@@ -46,6 +43,17 @@ class PhotoViewController: UIViewController {
         default:
           return UIColor(white: 0.7, alpha: 1.0) //4
         }
+      }
+      
+      NetworkService.shared.likePost {  [weak self ] result in
+          switch result {
+          case .success(let data):
+              print("The decode data is \(data)")
+              self?.items = data.photos.photo ?? []
+              self?.mainCollectionView.reloadData()
+          case .failure(let error):
+              print("The error is \(error.localizedDescription)")
+          }
       }
   }
 }

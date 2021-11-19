@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MainCollectionViewCell: UICollectionViewCell {
     
     static var identifier = "MainCollectionViewCellID"
     
     func setup(with viewModel: CodingViewModel) {
-        userImageView.image = viewModel.image
+        let url = URL(string: viewModel.image ?? "")
+        
+//        userImageView.image = viewModel.image
+        userImageView.kf.setImage(with: url)
         titleLabel.text = viewModel.title
         descriptionLabel.text = viewModel.describe
     }

@@ -7,15 +7,16 @@
 
 import Foundation
 import UIKit.UIImage
+import UIKit
 
 class CodingViewModel: ObservableObject {
   var title: String
   var describe: String
-  var image: UIImage!
+  var image: String
  
-  init(with model: CodingModel) {
+  init(with model: Photo) {
     title = model.title
-    describe = model.describe
-    image = UIImage(named: "\(model.image)")
+      describe = "\(model.ownername)"
+      image = model.urlM
   }
 }
