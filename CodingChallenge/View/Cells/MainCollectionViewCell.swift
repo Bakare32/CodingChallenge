@@ -25,25 +25,9 @@ class MainCollectionViewCell: UICollectionViewCell {
     
     private func configureLikedBtn(for selectedState: Bool) {
         topBackArrowButton.setImage(selectedState ? UIImage(systemName: "star.circle.fill") : UIImage(systemName: "star.circle"), for: .normal)
-//        likeBtn.tintColor = selectedState ? .red : .none
+        topBackArrowButton.tintColor = selectedState ? .white : .black
     }
     
-//    func configure(with model : CatModelF){
-//        let image = try? model.image.asURL()
-//        catImage.kf.setImage(with: image)
-//        catName.text = model.name
-//        configureLikedBtn(for: model.liked == true )
-//        self.catModels = model
-//    }
-    
-//    func setup(with viewModel: DisplayModel) {
-//        let url = URL(string: viewModel.image ?? "")
-//
-////        userImageView.image = viewModel.image
-//        userImageView.kf.setImage(with: url)
-//        titleLabel.text = viewModel.photo.title
-//        descriptionLabel.text = viewModel.photo.
-//    }
     
     private let userImageView: UIImageView = {
         let imageView = UIImageView()
