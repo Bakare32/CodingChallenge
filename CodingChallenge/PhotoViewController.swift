@@ -68,7 +68,7 @@ extension PhotoViewController: UICollectionViewDataSource, UICollectionViewDeleg
     let item = items[indexPath.row]
     cell.setup(with: CodingViewModel(with: item))
 //    cell.backgroundColor = UIColor(red: 0.91, green: 0.92, blue: 0.90, alpha: 1.00)
-    cell.layer.cornerRadius = 20
+    cell.layer.cornerRadius = 50
     return cell
   }
   
