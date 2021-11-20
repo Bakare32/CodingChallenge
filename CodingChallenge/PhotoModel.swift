@@ -27,7 +27,7 @@ struct Photo: Codable {
     let title: String
     let ispublic, isfriend, isfamily: Int
     let ownername: Ownername
-    let urlM: String
+    let urlM: String?
     let heightM, widthM: Int
 
     enum CodingKeys: String, CodingKey {

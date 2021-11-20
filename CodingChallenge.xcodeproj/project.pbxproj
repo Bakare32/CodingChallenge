@@ -15,6 +15,10 @@
 		04A397AD27483B3A005878EC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397AC27483B3A005878EC /* Route.swift */; };
 		04A397AF27483B47005878EC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397AE27483B47005878EC /* AppError.swift */; };
 		04A397B127483B92005878EC /* String + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397B027483B92005878EC /* String + extension.swift */; };
+		04A397C727497A17005878EC /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397C627497A17005878EC /* FavouriteCollectionViewCell.swift */; };
+		04A397C927497A79005878EC /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397C827497A79005878EC /* FavouriteViewModel.swift */; };
+		04A397CB27497A9E005878EC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397CA27497A9E005878EC /* ViewModel.swift */; };
+		04A397CD27497ABD005878EC /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A397CC27497ABD005878EC /* RealmService.swift */; };
 		2227A3844FE841AED702286B /* Pods_CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB040AAC067FE06806E04779 /* Pods_CodingChallenge.framework */; };
 		B4F5CAD32747C0F900ECE67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5CAD22747C0F900ECE67F /* AppDelegate.swift */; };
 		B4F5CAD52747C0F900ECE67F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5CAD42747C0F900ECE67F /* SceneDelegate.swift */; };
@@ -24,7 +28,6 @@
 		B4F5CADF2747C0FC00ECE67F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F5CADD2747C0FC00ECE67F /* LaunchScreen.storyboard */; };
 		B4F5CAE72747C26500ECE67F /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5CAE62747C26500ECE67F /* MainCollectionViewCell.swift */; };
 		B4F5CAE92747C2EC00ECE67F /* CodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5CAE82747C2EC00ECE67F /* CodingModel.swift */; };
-		B4F5CAEB2747C30B00ECE67F /* CodingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5CAEA2747C30B00ECE67F /* CodingViewModel.swift */; };
 		B4F5CAED2747C43200ECE67F /* SupportingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5CAEC2747C43200ECE67F /* SupportingFile.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,10 @@
 		04A397AC27483B3A005878EC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		04A397AE27483B47005878EC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		04A397B027483B92005878EC /* String + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + extension.swift"; sourceTree = "<group>"; };
+		04A397C627497A17005878EC /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		04A397C827497A79005878EC /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		04A397CA27497A9E005878EC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		04A397CC27497ABD005878EC /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		2A19995779C7CAA06F033058 /* Pods-CodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-CodingChallenge/Pods-CodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		B4F5CACF2747C0F900ECE67F /* CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F5CAD22747C0F900ECE67F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +55,6 @@
 		B4F5CAE02747C0FC00ECE67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F5CAE62747C26500ECE67F /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4F5CAE82747C2EC00ECE67F /* CodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingModel.swift; sourceTree = "<group>"; };
-		B4F5CAEA2747C30B00ECE67F /* CodingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingViewModel.swift; sourceTree = "<group>"; };
 		B4F5CAEC2747C43200ECE67F /* SupportingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingFile.swift; sourceTree = "<group>"; };
 		BB040AAC067FE06806E04779 /* Pods_CodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1792475B26CD37A01474FED /* Pods-CodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-CodingChallenge/Pods-CodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,7 +110,6 @@
 				B4F5CAE02747C0FC00ECE67F /* Info.plist */,
 				B4F5CAE62747C26500ECE67F /* MainCollectionViewCell.swift */,
 				B4F5CAE82747C2EC00ECE67F /* CodingModel.swift */,
-				B4F5CAEA2747C30B00ECE67F /* CodingViewModel.swift */,
 				B4F5CAEC2747C43200ECE67F /* SupportingFile.swift */,
 				04A397962747D8B8005878EC /* TabBarViewController.swift */,
 				04A397982747D90E005878EC /* FavouriteViewController.swift */,
@@ -114,6 +119,10 @@
 				04A397AC27483B3A005878EC /* Route.swift */,
 				04A397AE27483B47005878EC /* AppError.swift */,
 				04A397B027483B92005878EC /* String + extension.swift */,
+				04A397C627497A17005878EC /* FavouriteCollectionViewCell.swift */,
+				04A397C827497A79005878EC /* FavouriteViewModel.swift */,
+				04A397CA27497A9E005878EC /* ViewModel.swift */,
+				04A397CC27497ABD005878EC /* RealmService.swift */,
 			);
 			path = CodingChallenge;
 			sourceTree = "<group>";
@@ -243,15 +252,18 @@
 			files = (
 				04A397A927483B1E005878EC /* NetworkService.swift in Sources */,
 				B4F5CAD72747C0F900ECE67F /* PhotoViewController.swift in Sources */,
+				04A397C927497A79005878EC /* FavouriteViewModel.swift in Sources */,
 				B4F5CAD32747C0F900ECE67F /* AppDelegate.swift in Sources */,
 				B4F5CAED2747C43200ECE67F /* SupportingFile.swift in Sources */,
 				04A397AD27483B3A005878EC /* Route.swift in Sources */,
-				B4F5CAEB2747C30B00ECE67F /* CodingViewModel.swift in Sources */,
 				04A397AF27483B47005878EC /* AppError.swift in Sources */,
 				04A397992747D90E005878EC /* FavouriteViewController.swift in Sources */,
+				04A397C727497A17005878EC /* FavouriteCollectionViewCell.swift in Sources */,
+				04A397CB27497A9E005878EC /* ViewModel.swift in Sources */,
 				04A397B127483B92005878EC /* String + extension.swift in Sources */,
 				04A397972747D8B8005878EC /* TabBarViewController.swift in Sources */,
 				B4F5CAD52747C0F900ECE67F /* SceneDelegate.swift in Sources */,
+				04A397CD27497ABD005878EC /* RealmService.swift in Sources */,
 				04A397AB27483B2F005878EC /* Method.swift in Sources */,
 				B4F5CAE72747C26500ECE67F /* MainCollectionViewCell.swift in Sources */,
 				04A397A727483B0E005878EC /* PhotoModel.swift in Sources */,

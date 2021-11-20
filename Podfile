@@ -7,4 +7,6 @@ target 'CodingChallenge' do
 
   # Pods for CodingChallenge
  pod "Kingfisher"
+ pod 'RealmSwift'
+
 end
