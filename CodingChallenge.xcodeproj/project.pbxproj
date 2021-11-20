@@ -72,6 +72,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A397CE27497D39005878EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A397D227497DCA005878EC /* Cells */,
+				04A397D127497DAB005878EC /* Controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04A397CF27497D45005878EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A397C827497A79005878EC /* FavouriteViewModel.swift */,
+				04A397AC27483B3A005878EC /* Route.swift */,
+				04A397AE27483B47005878EC /* AppError.swift */,
+				04A397B027483B92005878EC /* String + extension.swift */,
+				04A397CC27497ABD005878EC /* RealmService.swift */,
+				04A397CA27497A9E005878EC /* ViewModel.swift */,
+				04A397AA27483B2F005878EC /* Method.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04A397D027497D53005878EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4F5CAE82747C2EC00ECE67F /* CodingModel.swift */,
+				04A397A627483B0E005878EC /* PhotoModel.swift */,
+				04A397A827483B1E005878EC /* NetworkService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A397D127497DAB005878EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04A397982747D90E005878EC /* FavouriteViewController.swift */,
+				B4F5CAD62747C0F900ECE67F /* PhotoViewController.swift */,
+				04A397962747D8B8005878EC /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04A397D227497DCA005878EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04A397C627497A17005878EC /* FavouriteCollectionViewCell.swift */,
+				B4F5CAE62747C26500ECE67F /* MainCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		193DCCC73AA33712F6EFD010 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,28 +153,16 @@
 		B4F5CAD12747C0F900ECE67F /* CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				04A397D027497D53005878EC /* Model */,
+				04A397CF27497D45005878EC /* ViewModel */,
+				04A397CE27497D39005878EC /* View */,
 				B4F5CAD22747C0F900ECE67F /* AppDelegate.swift */,
 				B4F5CAD42747C0F900ECE67F /* SceneDelegate.swift */,
-				B4F5CAD62747C0F900ECE67F /* PhotoViewController.swift */,
 				B4F5CAD82747C0F900ECE67F /* Main.storyboard */,
 				B4F5CADB2747C0FC00ECE67F /* Assets.xcassets */,
 				B4F5CADD2747C0FC00ECE67F /* LaunchScreen.storyboard */,
 				B4F5CAE02747C0FC00ECE67F /* Info.plist */,
-				B4F5CAE62747C26500ECE67F /* MainCollectionViewCell.swift */,
-				B4F5CAE82747C2EC00ECE67F /* CodingModel.swift */,
 				B4F5CAEC2747C43200ECE67F /* SupportingFile.swift */,
-				04A397962747D8B8005878EC /* TabBarViewController.swift */,
-				04A397982747D90E005878EC /* FavouriteViewController.swift */,
-				04A397A627483B0E005878EC /* PhotoModel.swift */,
-				04A397A827483B1E005878EC /* NetworkService.swift */,
-				04A397AA27483B2F005878EC /* Method.swift */,
-				04A397AC27483B3A005878EC /* Route.swift */,
-				04A397AE27483B47005878EC /* AppError.swift */,
-				04A397B027483B92005878EC /* String + extension.swift */,
-				04A397C627497A17005878EC /* FavouriteCollectionViewCell.swift */,
-				04A397C827497A79005878EC /* FavouriteViewModel.swift */,
-				04A397CA27497A9E005878EC /* ViewModel.swift */,
-				04A397CC27497ABD005878EC /* RealmService.swift */,
 			);
 			path = CodingChallenge;
 			sourceTree = "<group>";
