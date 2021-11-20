@@ -17,8 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       guard let windowScene = (scene as? UIWindowScene) else { return }
       let homeViewController = TabBarViewController()
       let navigationController = UINavigationController(rootViewController: homeViewController)
-      navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-      navigationController.navigationBar.shadowImage = UIImage()
+//      navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//      navigationController.navigationBar.shadowImage = UIImage()
       window = UIWindow(frame: windowScene.coordinateSpace.bounds)
       window?.windowScene = windowScene
       window?.rootViewController = navigationController

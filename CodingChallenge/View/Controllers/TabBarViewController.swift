@@ -11,10 +11,10 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let photoViewController = PhotoViewController()
-        let favouriteViewController = FavouriteViewController()
-// MARK: Assign viewController to tab Bar
-      self.setViewControllers([photoViewController, favouriteViewController], animated: true)
+        let vc1 = UINavigationController(rootViewController: PhotoViewController())
+                let vc2 = UINavigationController(rootViewController: FavouriteViewController())
+
+                viewControllers = [vc1, vc2]
       guard let items = self.tabBar.items else { return }
         let names = ["Photos", "Favourites"]
       let images = ["photo", "star.circle"]
@@ -22,8 +22,6 @@ class TabBarViewController: UITabBarController {
         items[item].image = UIImage(systemName: images[item])
           items[item].title = names[item]
     }
-
-        // Do any additional setup after loading the view.
     }
     
 }

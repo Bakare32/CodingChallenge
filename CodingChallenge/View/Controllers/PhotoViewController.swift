@@ -12,9 +12,7 @@ class PhotoViewController: UIViewController {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.identifier)
         collectionView.isPagingEnabled = true
-        collectionView.backgroundColor = .systemBackground  //UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)
-        
-        //      collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = .systemBackground
         collectionView.showsVerticalScrollIndicator = false
         collectionView.isUserInteractionEnabled = true
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,6 +21,11 @@ class PhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Photos"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.titleTextAttributes =
+        [NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 37)!,
+         NSAttributedString.Key.foregroundColor: UIColor.white]
         view.addSubview(mainCollectionView)
         mainCollectionView.dataSource = self
         mainCollectionView.delegate = self
@@ -39,19 +42,6 @@ class PhotoViewController: UIViewController {
                 return UIColor(white: 0.7, alpha: 1.0) //4
             }
         }
-        
-//        NetworkService.shared.likePost {  [weak self ] result in
-//            switch result {
-//            case .success(let data):
-//                //              print("The decode data is \(data)")
-//                self?.items = data.photos.photo ?? []
-//                self?.mainCollectionView.reloadData()
-//                //              UserDefaults.standard.set(data, forKey: "true")
-//            case .failure(let error):
-//                print("The error is \(error.localizedDescription)")
-//            }
-//        }
-        //      refresh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,10 +50,6 @@ class PhotoViewController: UIViewController {
         setupListeners()
     }
     
-    //    func refresh() {
-    //        UserDefaults.standard.data(forKey: "true")
-    //        self.mainCollectionView.reloadData()
-    //    }
     
 }
 
@@ -124,7 +110,7 @@ extension PhotoViewController: MainCollectionViewCellDelegate {
             DispatchQueue.main.async {
                 self.mainCollectionView.reloadData()
             }
-    }
+        }
     }
     
     
